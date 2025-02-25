@@ -95,6 +95,14 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/to/asset-from-package
 
+fonts:
+    - family: AM
+      fonts:
+        - asset: assets/fonts/Avenir Medium.ttf
+
+    - family: AB
+      fonts:
+        - asset: assets/fonts/Avenir Next LT Pro Bold.otf
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -114,3 +122,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  
