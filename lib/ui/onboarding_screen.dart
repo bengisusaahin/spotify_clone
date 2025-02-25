@@ -13,7 +13,7 @@ class OnBoardingScreen extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "images/onboarding_background.png",
+              "assets/images/onboarding_background.png",
             ),
             const SizedBox(
               height: 10,
@@ -96,7 +96,7 @@ class _ActionButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset("images/icon_google.png"),
+                Image.asset("assets/icon/icon_google.png"),
                 const Text(
                   "Continiue with google",
                   style: TextStyle(
@@ -132,7 +132,7 @@ class _ActionButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset("images/icon_facebook.png"),
+                Image.asset("assets/icon/icon_facebook.png"),
                 const Text(
                   "Continiue with Facebook",
                   style: TextStyle(
@@ -168,7 +168,7 @@ class _ActionButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset("images/icon_apple.png"),
+                Image.asset("assets/icon/icon_apple.png"),
                 const Text(
                   "Continiue with Apple",
                   style: TextStyle(
