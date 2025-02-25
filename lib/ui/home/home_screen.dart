@@ -7,7 +7,8 @@ import 'package:spotify_clone/bloc/album/album_event.dart';
 import 'package:spotify_clone/bloc/playlist/playlist_bloc.dart';
 import 'package:spotify_clone/bloc/playlist/playlist_event.dart';
 import 'package:spotify_clone/constants/constants.dart';
-import 'package:spotify_clone/ui/setting_screen.dart';
+import 'package:spotify_clone/ui/settings/setting_screen.dart';
+import 'package:spotify_clone/widget/bottom_player.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -34,6 +35,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 64),
+              child: BottomPlayer(),
             ),
           ],
         ),
