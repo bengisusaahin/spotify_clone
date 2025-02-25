@@ -82,6 +82,7 @@ flutter:
     - assets/images/
     - assets/images/artists/
     - assets/images/home/
+    - assets/images/podcasts/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
