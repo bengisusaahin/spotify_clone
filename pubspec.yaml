@@ -38,6 +38,7 @@ dependencies:
   flutter_bloc: ^9.0.0
   get_it: ^8.0.3
   animations: ^2.0.11
+  video_player: ^2.9.3
 
 dev_dependencies:
   flutter_test:
