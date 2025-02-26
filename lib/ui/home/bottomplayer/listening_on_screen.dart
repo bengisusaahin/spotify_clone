@@ -39,7 +39,10 @@ class _ListeningOnState extends State<ListeningOn> {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Image.asset("images/icon_back.png"),
+                  child: Icon(
+                    Icons.close_outlined,
+                    color: Colors.white,
+                    size: 24.0),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
@@ -89,7 +92,10 @@ class _ListeningOnState extends State<ListeningOn> {
                           ),
                           Row(
                             children: [
-                              Image.asset('images/icon_bluetooth.png'),
+                              Icon(
+                                Icons.bluetooth,
+                                color: MyColors.greenColor,
+                                size: 24.0),
                               const SizedBox(
                                 width: 5,
                               ),
@@ -120,7 +126,7 @@ class _ListeningOnState extends State<ListeningOn> {
                     Row(
                       children: [
                         const Text(
-                          "Start a Group Seassion",
+                          "Start a Group Session",
                           style: TextStyle(
                             fontFamily: "AB",
                             fontSize: 18,
@@ -128,20 +134,21 @@ class _ListeningOnState extends State<ListeningOn> {
                           ),
                         ),
                         const SizedBox(width: 5),
-                        Stack(
-                          alignment: AlignmentDirectional.center,
-                          children: [
-                            Image.asset('images/icon_beta.png'),
-                            const Text(
-                              "BETA",
-                              style: TextStyle(
-                                fontFamily: "AB",
-                                fontSize: 9,
-                                color: MyColors.blackColor,
-                              ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2), 
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300], 
+                            borderRadius: BorderRadius.circular(2), 
+                          ),
+                          child: const Text(
+                            "BETA", 
+                            style: TextStyle(
+                              fontFamily: "AB", 
+                              fontSize: 12,
+                              color: Colors.black, 
                             ),
-                          ],
-                        ),
+                          ),
+                        )
                       ],
                     ),
                     const SizedBox(
@@ -163,7 +170,7 @@ class _ListeningOnState extends State<ListeningOn> {
                 const Center(
                   child: CircleAvatar(
                     radius: 25,
-                    backgroundImage: AssetImage("images/myImage.png"),
+                    backgroundImage: AssetImage("assets/images/myImage.png"),
                   ),
                 ),
                 const SizedBox(
@@ -218,7 +225,10 @@ class _ListeningOnState extends State<ListeningOn> {
                 const Spacer(),
                 Row(
                   children: [
-                    Image.asset('images/icon_audio.png'),
+                    Icon(
+                      Icons.audiotrack_outlined,
+                      color: Colors.white,
+                      size: 24.0),
                     SliderTheme(
                       data: const SliderThemeData(
                         trackHeight: 2,
@@ -273,7 +283,10 @@ class _SelectDeviceSection extends StatelessWidget {
         ),
         Row(
           children: [
-            Image.asset('images/icon_monitor.png'),
+            Icon(
+              Icons.monitor_outlined,
+              color: Colors.white,
+              size: 24.0),
             const SizedBox(width: 15),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -288,7 +301,10 @@ class _SelectDeviceSection extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Image.asset('images/icon_cast.png'),
+                    Icon(
+                      Icons.cast,
+                      color: Colors.white,
+                      size: 24.0),
                     const SizedBox(width: 3),
                     const Text(
                       "Google Cast",
@@ -312,10 +328,13 @@ class _SelectDeviceSection extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset('images/icon_tv.png'),
+                Icon(
+                  Icons.tv,
+                  color: Colors.white,
+                  size: 24.0),
                 const SizedBox(width: 15),
                 const Text(
-                  "Mohammad's MacBook Pro",
+                  "Bengisu's Iphone",
                   style: TextStyle(
                     fontFamily: "AM",
                     fontSize: 17,
@@ -325,7 +344,10 @@ class _SelectDeviceSection extends StatelessWidget {
                 ),
               ],
             ),
-            Image.asset('images/icon_more.png'),
+            Icon(
+              Icons.more_horiz_outlined,
+              color: Colors.white,
+              size: 24.0),
           ],
         ),
         const SizedBox(
@@ -333,7 +355,10 @@ class _SelectDeviceSection extends StatelessWidget {
         ),
         Row(
           children: [
-            Image.asset('images/icon_airplay.png'),
+            Icon(
+              Icons.airplay_outlined,
+              color: Colors.white,
+              size: 24.0),
             const SizedBox(width: 10),
             const Text(
               "Airplay or Bluetooth",
