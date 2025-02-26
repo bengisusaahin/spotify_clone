@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants/constants.dart';
-import 'package:spotify_clone/ui/home/listening_on_screen.dart';
-import 'package:spotify_clone/ui/home/track_view_screen.dart';
+import 'package:spotify_clone/ui/home/bottomplayer/listening_on_screen.dart';
+import 'package:spotify_clone/ui/home/bottomplayer/track_view_screen.dart';
 
 class BottomPlayer extends StatefulWidget {
   const BottomPlayer({super.key});
@@ -88,6 +88,7 @@ class _BottomPlayerState extends State<BottomPlayer> {
                                     color: MyColors.whiteColor,
                                     fontSize: 13.5,
                                   ),
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                               ),
                               const Text(
@@ -106,7 +107,7 @@ class _BottomPlayerState extends State<BottomPlayer> {
                     SizedBox(
                       width: 103,
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           GestureDetector(
                             onTap: () {
@@ -116,74 +117,39 @@ class _BottomPlayerState extends State<BottomPlayer> {
                                 ),
                               );
                             },
-                            child: Image.asset(
-                              'assets/icon/icon_listen.png',
-                              color: const Color.fromARGB(255, 190, 190, 190),
-                              height: 24,
-                              width: 24,
+                            child: Icon(
+                              Icons.devices,
+                                color: Color.fromARGB(255, 190, 190, 190),
+                                size: 24.0,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 7),
-                            child: GestureDetector(
+                            GestureDetector(
                               onTap: () {
                                 setState(() {
                                   _isLiked = !_isLiked;
                                 });
                               },
                               child: (_isLiked)
-                                  ? Row(
-                                      children: [
-                                        Image.asset(
-                                          'assets/icon/icon_heart_filled.png',
-                                          height: 22,
-                                          width: 22,
-                                        ),
-                                        const SizedBox(
-                                          width: 9,
-                                        ),
-                                      ],
-                                    )
-                                  : Row(
-                                      children: [
-                                        Image.asset('assets/icon/icon_heart.png'),
-                                        const SizedBox(
-                                          width: 9,
-                                        ),
-                                      ],
-                                    ),
+                                ? Icon(
+                                    Icons.favorite_outlined,
+                                    color: Colors.green,
+                                    size: 22.0,
+                                  )
+                                : Icon(
+                                    Icons.favorite_outline,
+                                    color: const Color.fromARGB(120, 255, 255, 255),
+                                  ),
                             ),
-                          ),
                           InkWell(
                             onTap: () {
                               setState(() {
                                 _isInPlay = !_isInPlay;
                               });
                             },
-                            child: SizedBox(
-                              height: 20,
-                              width: 20,
-                              child: (_isInPlay)
-                                  ? Icon(
-                                    Icons.playlist_play,
-                                    color: Colors.white,
-                                    size: 24.0,
-                                  )
-                                  : Row(
-                                      children: [
-                                        Container(
-                                          height: 17,
-                                          width: 5,
-                                          color: MyColors.whiteColor,
-                                        ),
-                                        const SizedBox(width: 5),
-                                        Container(
-                                          height: 17,
-                                          width: 5,
-                                          color: MyColors.whiteColor,
-                                        ),
-                                      ],
-                                    ),
+                            child: Icon(
+                              _isInPlay ? Icons.play_arrow : Icons.pause,
+                              color: Colors.white,
+                              size: 24.0,
                             ),
                           ),
                         ],
