@@ -16,7 +16,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
   bool isSwitchedToNextTab = false;
   bool shadowSwitcher = false;
   double _currentNumber = 25;
-  bool _isLiked = false;
+  final bool _isLiked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -188,7 +188,11 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: MyColors.blackColor
-                                            .withOpacity(0.3),
+                                            .withValues(
+                                                red: 0.0,
+                                                green: 0.0,
+                                                blue: 0.0,
+                                                alpha: (0.3 * 255).toDouble()),
                                       ),
                                       child: Center(
                                         child: Image.asset(
@@ -211,7 +215,11 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: MyColors.blackColor
-                                            .withOpacity(0.3),
+                                            .withValues(
+                                                red: 0.0,
+                                                green: 0.0,
+                                                blue: 0.0,
+                                                alpha: (0.3 * 255).toDouble()),
                                       ),
                                       child: Center(
                                         child: Image.asset(
