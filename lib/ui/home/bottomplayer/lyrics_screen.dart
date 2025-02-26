@@ -61,28 +61,28 @@ class _Lyrics extends StatelessWidget {
               ),
               Text(
                 """
-'Cause enough is enough
-I can't stand up
-I can't stand, can't stand, 'causе enough is enough
-Long nights in the city of sin
-Thеy said I pick fights that I won't ever win
-I got a bad bitch that'll bring all her friends
-But when I'm with you it's like I'm livin' again
-And baby, I'm shit-faced sittin' on the sidewalk
-Ain't nobody listenin' when I talk
-I fall down and laugh, but it really ain't funny, uh
-Take me home, don't shut me out
-It's easier to leave me down here on the ground
-Take me home, baby, I'm fucked up now
-I know it's easier to leave me down here on the ground
-'Cause enough is enough (Shut me out)
-I can't stand up (I, I)
-I can't stand, can't stand, 'cause enough is enough (I, I)
-Hah, hah, I can't stand up
-Ah-ah-ah, I, I can't stand, can't stand
-2 AM, they ran out of lemonade
-So I shot that vodka straight, anyway (Ooh)
-""",
+                'Cause enough is enough
+                I can't stand up
+                I can't stand, can't stand, 'causе enough is enough
+                Long nights in the city of sin
+                Thеy said I pick fights that I won't ever win
+                I got a bad bitch that'll bring all her friends
+                But when I'm with you it's like I'm livin' again
+                And baby, I'm shit-faced sittin' on the sidewalk
+                Ain't nobody listenin' when I talk
+                I fall down and laugh, but it really ain't funny, uh
+                Take me home, don't shut me out
+                It's easier to leave me down here on the ground
+                Take me home, baby, I'm fucked up now
+                I know it's easier to leave me down here on the ground
+                'Cause enough is enough (Shut me out)
+                I can't stand up (I, I)
+                I can't stand, can't stand, 'cause enough is enough (I, I)
+                Hah, hah, I can't stand up
+                Ah-ah-ah, I, I can't stand, can't stand
+                2 AM, they ran out of lemonade
+                So I shot that vodka straight, anyway (Ooh)
+                """,
                 style: TextStyle(
                   color: MyColors.blackColor,
                   fontFamily: "AM",
@@ -112,13 +112,6 @@ class _Header extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            child: Container(
-              height: 32,
-              width: 32,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: const Color(0xff000000).withValues(alpha: (0.4 * 255).toDouble()),
-              ),
               child: const Center(
                 child: Icon(
                   Icons.keyboard_arrow_down,
@@ -126,7 +119,6 @@ class _Header extends StatelessWidget {
                   size: 26,
                 ),
               ),
-            ),
           ),
           const Column(
             children: [
@@ -149,10 +141,10 @@ class _Header extends StatelessWidget {
               ),
             ],
           ),
-          Image.asset(
-            'images/icon_flag.png',
-            height: 24,
-            width: 24,
+          Icon(
+            Icons.flag_outlined,
+            color: Colors.white,
+            size: 24.0,
           ),
         ],
       ),
@@ -228,11 +220,10 @@ class __ActionButtonsState extends State<_ActionButtons> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                'images/icon_sing.png',
-                height: 20,
-                width: 20,
+              Icon(
+                Icons.mic,
                 color: Colors.white,
+                size: 20.0,
               ),
               InkWell(
                 onTap: () {
@@ -254,12 +245,10 @@ class __ActionButtonsState extends State<_ActionButtons> {
                         width: 60,
                       ),
               ),
-              Image.asset(
-                'images/share.png',
-                color: Colors.white,
-                height: 20,
-                width: 20,
-              ),
+              Icon(
+              Icons.share_outlined,
+              color: Colors.white,
+              size: 20.0),
             ],
           ),
         ],

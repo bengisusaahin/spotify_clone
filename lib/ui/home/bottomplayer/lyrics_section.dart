@@ -92,11 +92,18 @@ class _LyricsSection extends StatelessWidget {
             child: Container(
               height: 28,
               decoration: BoxDecoration(
-                color: MyColors.darGreyColor.withValues(alpha: (0.6 * 255).toDouble()),
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(15),
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(15),
+                  ),
+                  border: Border.all(
+                     color: Colors.white.withValues(
+                      red: 255, 
+                      green: 255, 
+                      blue: 255, 
+                      alpha: (0.5 * 255).toDouble(),
+                      ), 
+                    width: 1),
                 ),
-              ),
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -114,7 +121,11 @@ class _LyricsSection extends StatelessWidget {
                       const SizedBox(
                         width: 8,
                       ),
-                      Image.asset("images/icon_bigger_size.png"),
+                      Icon(
+                        Icons.open_in_full_outlined,
+                        color: Colors.white,
+                        size: 10.0,
+                      ),
                     ],
                   ),
                 ),
@@ -146,16 +157,16 @@ class _LyricsSection extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
                       children: [
-                        Image.asset(
-                          'images/share.png',
-                          height: 10,
-                          width: 10,
+                        Icon(
+                          Icons.share,
+                          color: Colors.white,
+                          size: 10.0,
                         ),
                         const SizedBox(
                           width: 5,
                         ),
                         const Text(
-                          "ShARE",
+                          "Share",
                           style: TextStyle(
                             fontFamily: "AM",
                             fontSize: 10,

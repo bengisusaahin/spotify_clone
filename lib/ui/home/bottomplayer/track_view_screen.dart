@@ -176,7 +176,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                     opacity: (isSwitchedToNextTab) ? 0 : 1,
                                     child: GestureDetector(
                                       onTap: () {
-                                        //Todo navigate song control panel
+                                        
                                       },
                                       child: const Icon(
                                         Icons.more_vert,
@@ -189,7 +189,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                     duration: const Duration(milliseconds: 250),
                                     opacity: (isSwitchedToNextTab) ? 0 : 1,
                                     child: Icon(
-                                      Icons.share,
+                                      Icons.share_outlined,
                                       color: Colors.white,
                                       size: 24.0,
                                     ),
