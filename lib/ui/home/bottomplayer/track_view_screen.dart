@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants/constants.dart';
-import 'package:spotify_clone/ui/home/listening_on_screen.dart';
-import 'package:spotify_clone/ui/home/lyrics_section.dart';
+import 'package:spotify_clone/ui/home/bottomplayer/listening_on_screen.dart';
+import 'package:spotify_clone/ui/home/bottomplayer/lyrics_section.dart';
 import 'package:spotify_clone/widget/stream_buttons.dart';
+import 'package:spotify_clone/widget/video_player.dart';
 
 class TrackViewScreen extends StatefulWidget {
   const TrackViewScreen({super.key});
@@ -39,7 +40,49 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                             shadowSwitcher = !shadowSwitcher;
                           });
                         },
-                        
+                        child: Stack(
+                          children: [
+                            const BackVideoPlayer(
+                              key: Key("2"),
+                            ),
+                            Container(
+                              color: (!shadowSwitcher)
+                                  ? MyColors.blackColor.withValues(
+                                    red: 0, 
+                                    green: 0, 
+                                    blue: 0, 
+                                    alpha: (0.45 * 255).toDouble(), 
+                                  )
+                                  : Colors.transparent,
+                            ),
+                            Positioned(
+                              left: 25,
+                              bottom: 70,
+                              child: AnimatedOpacity(
+                                duration: const Duration(milliseconds: 200),
+                                opacity: (shadowSwitcher) ? 1 : 0,
+                                child: const Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 15,
+                                      backgroundImage: AssetImage(
+                                          'assets/images/artists/Post-Malone.jpg'),
+                                    ),
+                                    SizedBox(width: 15),
+                                    Text(
+                                      "by Post Malone",
+                                      style: TextStyle(
+                                        fontFamily: "AM",
+                                        fontSize: 16,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
               ),                
               const _Header(),
@@ -69,7 +112,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                 width: 120,
                                 child: Center(
                                   child: Image.asset(
-                                    "images/home/AUSTIN.jpg",
+                                    "assets/images/home/AUSTIN.jpg",
                                   ),
                                 ),
                               ),
@@ -145,9 +188,10 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                   AnimatedOpacity(
                                     duration: const Duration(milliseconds: 250),
                                     opacity: (isSwitchedToNextTab) ? 0 : 1,
-                                    child: Image.asset(
-                                      'images/share.png',
+                                    child: Icon(
+                                      Icons.share,
                                       color: Colors.white,
+                                      size: 24.0,
                                     ),
                                   ),
                                 ],
@@ -195,10 +239,10 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                                 alpha: (0.3 * 255).toDouble()),
                                       ),
                                       child: Center(
-                                        child: Image.asset(
-                                          "images/icon_back_song.png",
-                                          height: 16,
-                                          width: 16,
+                                        child: Icon(
+                                          Icons.skip_previous,
+                                          color: Colors.white,
+                                          size: 16.0,
                                         ),
                                       ),
                                     ),
@@ -222,10 +266,10 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                                 alpha: (0.3 * 255).toDouble()),
                                       ),
                                       child: Center(
-                                        child: Image.asset(
-                                          "images/icon_next_song.png",
-                                          height: 16,
-                                          width: 16,
+                                        child: Icon(
+                                          Icons.skip_next,
+                                          color: Colors.white,
+                                          size: 16.0,
                                         ),
                                       ),
                                     ),
@@ -238,14 +282,15 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                 child: GestureDetector(
                                   onTap: () {},
                                   child: (_isLiked)
-                                      ? Image.asset(
-                                          'images/icon_heart_filled.png',
-                                          height: 22,
-                                          width: 22,
-                                        )
-                                      : Image.asset(
-                                          'images/icon_heart.png',
+                                      ? Icon(
+                                          Icons.favorite_outlined,
                                           color: Colors.white,
+                                          size: 16.0,
+                                        )
+                                      : Icon(
+                                          Icons.favorite_outline,
+                                          color: Colors.white,
+                                          size: 16.0,
                                         ),
                                 ),
                               ),
@@ -454,12 +499,11 @@ class _Header extends StatelessWidget {
                 ),
               );
             },
-            child: Image.asset(
-              'images/icon_listen.png',
-              height: 20,
-              width: 20,
-              color: Colors.white,
-            ),
+            child: Icon(
+              Icons.devices,
+                color: Colors.white,
+                size: 20.0,
+            )
           ),
         ],
       ),
