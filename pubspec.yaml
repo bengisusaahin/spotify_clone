@@ -34,11 +34,23 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  auto_size_text: ^3.0.0
+  flutter_bloc: ^9.0.0
+  get_it: ^8.0.3
+  animations: ^2.0.11
+  video_player: ^2.9.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.14.3
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
 
 flutter_launcher_icons:
   android: true
@@ -58,13 +70,6 @@ flutter_launcher_icons:
     generate: true
     image_path: "path/to/image.png"
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^5.0.0
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -76,8 +81,12 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/images/
     - assets/icon/
+    - assets/images/
+    - assets/images/artists/
+    - assets/images/home/
+    - assets/images/podcasts/
+    - assets/video/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -90,6 +99,14 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/to/asset-from-package
 
+fonts:
+    - family: AM
+      fonts:
+        - asset: assets/fonts/Avenir Medium.ttf
+
+    - family: AB
+      fonts:
+        - asset: assets/fonts/Avenir Next LT Pro Bold.otf
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -109,3 +126,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  

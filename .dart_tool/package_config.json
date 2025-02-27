@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animations",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/animations-2.0.11",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.3",
       "packageUri": "lib/",
@@ -18,6 +24,18 @@
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.12.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "auto_size_text",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/auto_size_text-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bloc",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/bloc-9.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "boolean_selector",
@@ -62,6 +80,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "csslib",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8",
       "packageUri": "lib/",
@@ -86,16 +110,46 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-9.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "flutter_launcher_icons",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.14.3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_lints",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.7"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "get_it",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-8.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "html",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "image",
@@ -128,6 +182,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "lints",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.17",
       "packageUri": "lib/",
@@ -146,6 +206,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",
@@ -158,10 +224,22 @@
       "languageVersion": "3.5"
     },
     {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "posix",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -218,10 +296,46 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "video_player",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "video_player_android",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.7.17",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "video_player_avfoundation",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "video_player_platform_interface",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "video_player_web",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.1",
       "packageUri": "lib/",
       "languageVersion": "3.3"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///C:/Users/Bengs/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "xml",
@@ -242,7 +356,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-02-25T09:19:38.628146Z",
+  "generated": "2025-02-27T18:56:26.561535Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///C:/Users/Bengs/AppData/Local/flutter",

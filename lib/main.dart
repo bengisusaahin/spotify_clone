@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/di/service_locator.dart';
 import 'package:spotify_clone/ui/splash_screen.dart';
 
 void main() {
+  initServiceLocator();
   runApp(const MyApp());
 }
 
