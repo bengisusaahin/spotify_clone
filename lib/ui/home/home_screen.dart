@@ -9,6 +9,7 @@ import 'package:spotify_clone/bloc/playlist/playlist_event.dart';
 import 'package:spotify_clone/constants/constants.dart';
 import 'package:spotify_clone/ui/settings/setting_screen.dart';
 import 'package:spotify_clone/widget/bottom_player.dart';
+import 'dart:math' as math;
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -838,7 +839,7 @@ class _RecentPlaysChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 55,
-      width: (MediaQuery.of(context).size.width / 1.77) - 45,
+      width: math.max((MediaQuery.of(context).size.width / 1.77) - 45, 0),
       decoration: const BoxDecoration(
         color: MyColors.darGreyColor,
         borderRadius: BorderRadius.all(

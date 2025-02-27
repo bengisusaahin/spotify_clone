@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants/constants.dart';
 import 'package:spotify_clone/ui/home/bottomplayer/listening_on_screen.dart';
 import 'package:spotify_clone/ui/home/bottomplayer/track_view_screen.dart';
+import 'dart:math' as math;
 
 class BottomPlayer extends StatefulWidget {
   const BottomPlayer({super.key});
@@ -78,7 +79,7 @@ class _BottomPlayerState extends State<BottomPlayer> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               SizedBox(
-                                width: MediaQuery.of(context).size.width - 190,
+                                width: math.max(MediaQuery.of(context).size.width - 190, 0),
                                 height: 20,
                                 child: const Text(
                                   "Enough is Enough",
