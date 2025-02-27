@@ -47,12 +47,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                             ),
                             Container(
                               color: (!shadowSwitcher)
-                                  ? MyColors.blackColor.withValues(
-                                    red: 0, 
-                                    green: 0, 
-                                    blue: 0, 
-                                    alpha: (0.45 * 255).toDouble(), 
-                                  )
+                                  ? MyColors.blackColor.withOpacity(0.45)
                                   : Colors.transparent,
                             ),
                             Positioned(
@@ -74,7 +69,7 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                       style: TextStyle(
                                         fontFamily: "AM",
                                         fontSize: 16,
-                                        color: Colors.white,
+                                        color: Colors.white
                                       ),
                                     ),
                                   ],
