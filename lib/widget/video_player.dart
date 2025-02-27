@@ -15,7 +15,7 @@ class _BackVideoPlayerState extends State<BackVideoPlayer> {
   @override
   void initState() {
     super.initState();
-    controller = VideoPlayerController.asset('video/music-video.mp4')
+    controller = VideoPlayerController.asset('assets/video/music-video.mp4')
       ..initialize().then((value) {
         controller.play();
         controller.setLooping(true);
