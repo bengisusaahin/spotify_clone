@@ -19,7 +19,7 @@ class _BottomPlayerState extends State<BottomPlayer> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
-        height: 59,
+        height: 72,
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
           color: Color.fromARGB(255, 83, 83, 83),
