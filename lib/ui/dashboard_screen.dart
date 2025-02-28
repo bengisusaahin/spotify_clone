@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants/constants.dart';
 import 'package:spotify_clone/ui/home/home_screen.dart';
+import 'package:spotify_clone/ui/library/library_screen.dart';
 
 class DashBoardScreen extends StatefulWidget {
   const DashBoardScreen({super.key});
@@ -61,7 +62,8 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
       body: IndexedStack(
         index: _currentIndex,
         children: const [
-          HomeScreen()
+          HomeScreen(),
+          LibraryScreen()
         ],
       ),
     );
