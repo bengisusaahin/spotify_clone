@@ -59,10 +59,30 @@ A live demo of the application can be found [here](https://github.com/user-attac
 https://github.com/user-attachments/assets/a44d9f7f-7b57-42a0-bb8b-9c7f558e7d2c
 
 ## Open-Source Libraries
-* [Flutter](https://flutter.dev/)
-* [Dart](https://dart.dev/)
-* [flutter_bloc](https://pub.dev/packages/flutter_bloc)
-* [get_it](https://pub.dev/packages/get_it)
+* **Flutter**: A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. 
+  - Version: `2.10.0` (or the version you are using)
+  - [Flutter Documentation](https://flutter.dev/docs)
+  
+* **Dart**: The programming language used to build Flutter applications. 
+  - Version: `2.15.0` (or the version you are using)
+  - [Dart Documentation](https://dart.dev/guides)
+  
+* **flutter_bloc**: A library that helps implement the BLoC (Business Logic Component) pattern, making it easier to manage state in Flutter applications. 
+  - Version: `9.0.0`
+  - [flutter_bloc Documentation](https://pub.dev/packages/flutter_bloc)
+  
+* **get_it**: A simple service locator for Dart and Flutter projects, allowing for easy dependency injection. 
+  - Version: `8.0.3`
+  - [get_it Documentation](https://pub.dev/packages/get_it)
+  
+* **animations**: A package that provides pre-built animations for Flutter applications, making it easier to add animations to your UI. 
+  - Version: `2.0.11`
+  - [animations Documentation](https://pub.dev/packages/animations)
+  
+* **video_player**: A Flutter plugin for playing videos, supporting various video formats and providing controls for playback. 
+  - Version: `2.9.3`
+  - [video_player Documentation](https://pub.dev/packages/video_player)
+
 
 ## Getting Started
 
