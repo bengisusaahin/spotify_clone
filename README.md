@@ -19,6 +19,7 @@ Spotify Clone
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#demo">Demo</a></li>
     <li><a href="#open-source-libraries">Open-Source Libraries</a></li>
+    <li><a href="#commit-practices">Commit Practices</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -83,6 +84,24 @@ https://github.com/user-attachments/assets/a44d9f7f-7b57-42a0-bb8b-9c7f558e7d2c
   - Version: `2.9.3`
   - [video_player Documentation](https://pub.dev/packages/video_player)
 
+## Commit Practices
+
+This project follows atomic commit practices and uses semantic commit messages. 
+
+- **Atomic Commits**: Each commit should represent a single logical change. This makes it easier to understand the history of changes and to revert specific changes if necessary.
+  
+- **Semantic Commit Messages**: Commit messages should follow the format:
+  - `type(scope): subject`
+  - Examples of types include:
+    - `feat`: A new feature
+    - `fix`: A bug fix
+    - `docs`: Documentation changes
+    - `style`: Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+    - `refactor`: A code change that neither fixes a bug nor adds a feature
+    - `test`: Adding missing tests or correcting existing tests
+    - `chore`: Changes to the build process or auxiliary tools and libraries
+
+This practice helps maintain a clear and organized commit history, making it easier for contributors to understand the project's evolution.
 
 ## Getting Started
 
