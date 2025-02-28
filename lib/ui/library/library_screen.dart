@@ -4,6 +4,7 @@ import 'package:spotify_clone/DI/service_locator.dart';
 import 'package:spotify_clone/bloc/album/album_bloc.dart';
 import 'package:spotify_clone/bloc/album/album_event.dart';
 import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/ui/library/albumview_screen.dart';
 import 'package:spotify_clone/ui/settings/setting_screen.dart';
 import 'package:spotify_clone/widget/album_chip.dart';
 import 'package:spotify_clone/widget/artist_chip.dart';
@@ -131,7 +132,7 @@ class LibraryScreen extends StatelessWidget {
                                 bloc.add(AlbumListEvent("Drake"));
                                 return bloc;
                               },
-                              //TODO ALbum View Screen
+                              child: const AlbumViewScreen(),
                             ),
                           ),
                         );
@@ -176,7 +177,7 @@ class LibraryScreen extends StatelessWidget {
                                 bloc.add(AlbumListEvent("21 Savage"));
                                 return bloc;
                               },
-                              //TODO ALbum View Screen
+                              child: const AlbumViewScreen(),
                             ),
                           ),
                         );

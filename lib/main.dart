@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/di/service_locator.dart';
-import 'package:spotify_clone/ui/library/library_screen.dart';
-//import 'package:spotify_clone/ui/splash_screen.dart';
+import 'package:spotify_clone/ui/splash_screen.dart';
 
 void main() {
   initServiceLocator();
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent
       ),
       debugShowCheckedModeBanner: false,
-      home: const LibraryScreen(),
+      home: const SplashScreen(),
     );
   }
 }
