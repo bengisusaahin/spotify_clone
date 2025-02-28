@@ -5,7 +5,10 @@ import 'package:spotify_clone/bloc/album/album_bloc.dart';
 import 'package:spotify_clone/bloc/album/album_event.dart';
 import 'package:spotify_clone/constants/constants.dart';
 import 'package:spotify_clone/ui/settings/setting_screen.dart';
+import 'package:spotify_clone/widget/album_chip.dart';
+import 'package:spotify_clone/widget/artist_chip.dart';
 import 'package:spotify_clone/widget/bottom_player.dart';
+import 'package:spotify_clone/widget/song_chip.dart';
 
 class LibraryScreen extends StatelessWidget {
   const LibraryScreen({super.key});
@@ -133,10 +136,34 @@ class LibraryScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      // TODO Album chip
+                      child: const AlbumChip(
+                        image: "For-All-The-Dogs.jpg",
+                        albumName: "For All The Dogs",
+                        artistName: "Drake",
+                        size: 65,
+                        isDeletable: false,
+                      ),
                     ),
                   ),
-                  // TODO Artist chip
+                  const ArtistChip(
+                    image: '21-Savage.jpg',
+                    name: "21 Savage",
+                    radius: 35,
+                    isDeletable: false,
+                  ),
+                  const SongChip(
+                    image: "UTOPIA.jpg",
+                    singerName: 'Travis Scott',
+                    songTitle: "I KNOW ?",
+                    size: 65,
+                    isDeletable: false,
+                  ),
+                  const ArtistChip(
+                    image: "Post-Malone.jpg",
+                    name: "Post Malone",
+                    radius: 35,
+                    isDeletable: false,
+                  ),
                   SliverToBoxAdapter(
                     child: GestureDetector(
                       onTap: () {
@@ -154,11 +181,28 @@ class LibraryScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      // TODO Album chip
+                      child: const AlbumChip(
+                        image: "american-dream.jpg",
+                        albumName: "american dream",
+                        artistName: "21 Savage",
+                        size: 65,
+                        isDeletable: false,
+                      ),
                     ),
                   ),
-                  // TODO Artist chip
-                  // TODO Song chip
+                  const ArtistChip(
+                    image: "J-Cole.jpg",
+                    name: "J Cole",
+                    radius: 35,
+                    isDeletable: false,
+                  ),
+                  const SongChip(
+                    image: "AUSTIN.jpg",
+                    singerName: 'Post Malone',
+                    songTitle: "Landmine",
+                    size: 65,
+                    isDeletable: false,
+                  ),
                   const SliverPadding(
                     padding: EdgeInsets.only(bottom: 130),
                   ),
