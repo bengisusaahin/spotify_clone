@@ -53,11 +53,7 @@ class ArtistChip extends StatelessWidget {
             ),
             Visibility(
               visible: isDeletable,
-              child: Image.asset(
-                'images/icon_back.png',
-                height: 14,
-                width: 14,
-              ),
+              child: Icon(Icons.arrow_back_outlined,color: Colors.white, size: 14)
             ),
           ],
         ),
