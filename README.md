@@ -60,7 +60,7 @@ https://github.com/user-attachments/assets/a44d9f7f-7b57-42a0-bb8b-9c7f558e7d2c
 
 ## Open-Source Libraries
 * **Flutter**: A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. 
-  - Version: `2.10.0` (or the version you are using)
+  - Version: `3.29.0` (or the version you are using)
   - [Flutter Documentation](https://flutter.dev/docs)
   
 * **Dart**: The programming language used to build Flutter applications. 
